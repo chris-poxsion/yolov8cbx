@@ -1,3 +1,5 @@
+**无废话 三分钟快速安装我的改变包**
+
 0.
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
