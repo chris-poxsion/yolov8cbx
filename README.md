@@ -9,7 +9,7 @@ conda config --set show_channel_urls yes
 
 conda config --show channels
 
-# . 清理缓存
+# 清理缓存
 conda clean --all
 
 
@@ -27,17 +27,6 @@ conda activate 20250510qinjieyolov8
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 
 pip install torch==1.8.1+cu102 torchvision==0.9.1+cu102 torchaudio==0.8.1 -f
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -70,43 +59,15 @@ yolo cfg=F:\2025YOLOV8test\yolov8-main\ultralytics\yolo\cfg\default.yaml
 
 
 
-6.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 备注：
 1.
 查看内存：watch -n 0.5 nvidia-smi
 2.
-如果是nan
-
-
-
+如果是nan，就关掉所有amp
 注释掉112行，batch要小
 
-
+划分数据集的逻辑已经好了
 
 (202505100012cbxyolov8) F:\2025YOLOV8test\YOLOv8-cbxmain>              pip install timm                       pip install sklearn
 
