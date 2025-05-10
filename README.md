@@ -77,4 +77,4 @@ object-class>        <x>          <y>       <width>      <height>
 方框的坐标必须要归一化到（0-1），如果方框以像素为单位，请将x_center和width除以图像宽度，将y_center和height除以图像高度。
 类别必须从0开始，。
 
-
+Ultralytics YOLOv8.0.202  Python-3.8.20 torch-2.4.1+cu118 CUDA:0 (NVIDIA GeForce GTX 1650, 4096MiB)
