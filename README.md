@@ -1,6 +1,10 @@
-**无废话 三分钟快速安装我的改变包**
+**无废话 三步极速安装 自研爆改包-yolov8cbx**
 
-0.
+1.
+Conda create -n 20250510qinjieyolov8 python=3.8
+conda activate 20250510qinjieyolov8
+
+2.
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r
@@ -8,54 +12,32 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/p
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
 conda config --set show_channel_urls yes
-
 conda config --show channels
-
-# 清理缓存
-conda clean --all
-
-
-
-
-1.
-Conda create -n 20250510qinjieyolov8 python=3.8 
-
-
-2.
-
-conda activate 20250510qinjieyolov8
 
 3.
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 
-pip install torch==1.8.1+cu102 torchvision==0.9.1+cu102 torchaudio==0.8.1 -f
 
-
-
-
+*************************************************************************************
+****进入编辑器****
 
 1.
 conda env list
-2.
 conda activate 202505100012cbxyolov8
-3.
-python setup.py install
 
-
-不行的话用
-pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
-
-
-3.
+2.
 pip install -r requirements.txt
-
-4.
-Python setup.py install
-
+pip install timm 
+pip install einops
+pip install scikit-learn
+python setup.py install
 pip install opencv-python
+                                  ！！！！！！！！！！！
+                               pip install efficientnet_pytorch
+                                  ？？？？？？？？？？？？
 
-5.
-运行
+  
+3.运行
 yolo cfg=F:\2025YOLOV8test\yolov8-main\ultralytics\yolo\cfg\default.yaml
 
 
@@ -63,19 +45,26 @@ yolo cfg=F:\2025YOLOV8test\yolov8-main\ultralytics\yolo\cfg\default.yaml
 
 
 备注：
-1.
+
 查看内存：watch -n 0.5 nvidia-smi
-2.
+
 如果是nan，就关掉所有amp
 注释掉112行，batch要小
 
 划分数据集的逻辑已经好了
 
-(202505100012cbxyolov8) F:\2025YOLOV8test\YOLOv8-cbxmain>              pip install timm                       pip install sklearn
+conda清理环境
+# 清理缓存
+conda clean --all
 
-(202505100012cbxyolov8) F:\2025YOLOV8test\YOLOv8-cbxmain>                 pip install einops
+
+安装不行的话用
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 
+F:\2025YOLOV8test\yolov8cbx-main\cbxyolov8\ultralytics\engine
+第113行             # self.args.half = self.device.type != 'cpu'  # force FP16 val during training
+******改dataset train里的路径！******
 
 
 YOLO标签的格式
