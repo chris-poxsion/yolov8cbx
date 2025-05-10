@@ -72,3 +72,18 @@ yolo cfg=F:\2025YOLOV8test\yolov8-main\ultralytics\yolo\cfg\default.yaml
 (202505100012cbxyolov8) F:\2025YOLOV8test\YOLOv8-cbxmain>              pip install timm                       pip install sklearn
 
 (202505100012cbxyolov8) F:\2025YOLOV8test\YOLOv8-cbxmain>                 pip install einops
+
+
+
+
+YOLO标签的格式
+object-class>        <x>          <y>       <width>      <height>
+0                 0.412500     0.318981      0.358333   0.636111
+               x,y是目标的中心坐标，width,height是目标的宽和高。这些坐标是通过归一化的，其中x，width是使用原图的width进行归一化；而y，height是使用原图的height进行归一化。
+
+每个对象一行
+每行的格式是：class x_center y_center width height
+方框的坐标必须要归一化到（0-1），如果方框以像素为单位，请将x_center和width除以图像宽度，将y_center和height除以图像高度。
+类别必须从0开始，。
+
+
