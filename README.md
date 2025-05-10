@@ -108,6 +108,6 @@ yolo cfg=F:\2025YOLOV8test\yolov8-main\ultralytics\yolo\cfg\default.yaml
 
 
 
-(202505100012cbxyolov8) F:\2025YOLOV8test\YOLOv8-cbxmain>pip install timm
+(202505100012cbxyolov8) F:\2025YOLOV8test\YOLOv8-cbxmain>              pip install timm                       pip install sklearn
 
-(202505100012cbxyolov8) F:\2025YOLOV8test\YOLOv8-cbxmain>pip install einops
+(202505100012cbxyolov8) F:\2025YOLOV8test\YOLOv8-cbxmain>                 pip install einops
