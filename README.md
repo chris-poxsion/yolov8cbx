@@ -1,3 +1,16 @@
+"""
+Module: personal_info
+Author: Boxin Cao
+Email: cbx2018cn@foxmail.com
+Website: https://caobo.xin
+Version: 3.1.9
+Python Version: >= 3.8
+License: MIT License 
+
+Copyright (c) 2023  By CaoBoxin
+All rights reserved.
+
+"""
 **无废话 三步极速安装 自研爆改包-yolov8cbx**
 
 1.
@@ -78,3 +91,16 @@ object-class>        <x>          <y>       <width>      <height>
 类别必须从0开始，。
 
 Ultralytics YOLOv8.0.202  Python-3.8.20 torch-2.4.1+cu118 CUDA:0 (NVIDIA GeForce GTX 1650, 4096MiB)
+"""
+Module: personal_info
+Author: Boxin Cao
+Email: cbx2018cn@foxmail.com
+Website: https://caobo.xin
+Version: 3.1.9
+Python Version: >= 3.8
+License: MIT License 
+
+Copyright (c) 2023  By CaoBoxin
+All rights reserved.
+
+"""
